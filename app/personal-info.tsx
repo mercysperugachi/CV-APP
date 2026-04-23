@@ -73,6 +73,12 @@ export default function PersonalInfoScreen() {
           numberOfLines={4}
           style={{ height: 100, textAlignVertical: "top" }}
         />
+        <InputField
+          label="Foto de Perfil"
+          placeholder="URL de la foto de perfil"
+          value={formData.profileImage}
+          onChangeText={(text) => setFormData({ ...formData, profileImage: text })}
+        />
 
         <NavigationButton title="Guardar Información" onPress={handleSave} />
 
